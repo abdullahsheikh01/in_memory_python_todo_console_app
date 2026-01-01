@@ -150,8 +150,7 @@ Instructions: As an expert architect, generate a detailed architectural plan for
    - Options Considered, Trade-offs, Rationale.
    - Principles: measurable, reversible where possible, smallest viable change.
 
-3. Interfaces and API Contracts:
-   - Public APIs: Inputs, Outputs, Errors.
+3. Interfaces :
    - Versioning Strategy.
    - Idempotency, Timeouts, Retries.
    - Error Taxonomy with status codes.
