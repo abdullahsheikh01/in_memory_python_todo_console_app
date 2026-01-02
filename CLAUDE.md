@@ -209,4 +209,9 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
 
 ## Recent Changes
+- 002-todo-core-features: Added Python 3.12 + Pydantic (for data validation), InquirerPy (for CLI interactions), pytest (for testing)
 - 001-todo-data-models: Added [if applicable, e.g., PostgreSQL, CoreData, files or N/A]
+
+## Active Technologies
+- Python 3.12 + Pydantic (for data validation), InquirerPy (for CLI interactions), pytest (for testing) (002-todo-core-features)
+- In-memory list (tasks_list: List[Task]) stored in data models (002-todo-core-features)
