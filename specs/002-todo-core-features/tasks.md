@@ -34,10 +34,10 @@ This document breaks down the implementation of the Todo App Core Features into 
 ### Goal
 Ensure core data models are properly implemented and available for all user stories.
 
-- [ ] T001 Verify Task model exists in src/todo_app/data_models/task.py with id, title, description, is_complete fields
-- [ ] T002 Verify tasks_list exists in src/todo_app/data_models/tasks_list.py as List[Task]
-- [ ] T003 Verify Task model uses Pydantic BaseModel with proper validation
-- [ ] T004 Verify all Task fields have proper type hints per FR-006 and FR-007
+- [X] T001 Verify Task model exists in src/todo_app/data_models/task.py with id, title, description, is_complete fields
+- [X] T002 Verify tasks_list exists in src/todo_app/data_models/tasks_list.py as List[Task]
+- [X] T003 Verify Task model uses Pydantic BaseModel with proper validation
+- [X] T004 Verify all Task fields have proper type hints per FR-006 and FR-007
 
 ---
 
@@ -51,14 +51,14 @@ User can add a new task with a title and description, and see it appear in their
 
 ### Tasks
 
-- [ ] T005 [US1] Create empty add_task.py file in src/todo_app/features/ if not already present
-- [ ] T006 [US1] Implement add_task function signature: def add_task(task: Task) -> bool in src/todo_app/features/add_task.py
-- [ ] T007 [US1] Add import for Task model and tasks_list in src/todo_app/features/add_task.py
-- [ ] T008 [US1] Implement validation to check if task with same ID already exists in tasks_list
-- [ ] T009 [US1] Implement logic to append new task to tasks_list
-- [ ] T010 [US1] Return True when task is successfully added, False if duplicate ID
-- [ ] T011 [US1] Add proper type hints for all parameters and return values per FR-006
-- [ ] T012 [US1] Verify function meets FR-001 requirements for adding Task to existing Task list
+- [X] T005 [US1] Create empty add_task.py file in src/todo_app/features/ if not already present
+- [X] T006 [US1] Implement add_task function signature: def add_task(task: Task) -> bool in src/todo_app/features/add_task.py
+- [X] T007 [US1] Add import for Task model and tasks_list in src/todo_app/features/add_task.py
+- [X] T008 [US1] Implement validation to check if task with same ID already exists in tasks_list
+- [X] T009 [US1] Implement logic to append new task to tasks_list
+- [X] T010 [US1] Return True when task is successfully added, False if duplicate ID
+- [X] T011 [US1] Add proper type hints for all parameters and return values per FR-006
+- [X] T012 [US1] Verify function meets FR-001 requirements for adding Task to existing Task list
 
 ---
 
@@ -72,14 +72,14 @@ User can select an existing task, modify its details, and see the changes saved.
 
 ### Tasks
 
-- [ ] T013 [US2] Create empty update_task.py file in src/todo_app/features/ if not already present
-- [ ] T014 [US2] Implement update_task function signature: def update_task(task: Task) -> bool in src/todo_app/features/update_task.py
-- [ ] T015 [US2] Add import for Task model and tasks_list in src/todo_app/features/update_task.py
-- [ ] T016 [US2] Implement logic to find existing task by ID in tasks_list
-- [ ] T017 [US2] Implement logic to update the found task with new values from input task
-- [ ] T018 [US2] Return True when task is successfully updated, False if task not found
-- [ ] T019 [US2] Add proper type hints for all parameters and return values per FR-006
-- [ ] T020 [US2] Verify function meets FR-003 requirements for updating Task in Task list
+- [X] T013 [US2] Create empty update_task.py file in src/todo_app/features/ if not already present
+- [X] T014 [US2] Implement update_task function signature: def update_task(task: Task) -> bool in src/todo_app/features/update_task.py
+- [X] T015 [US2] Add import for Task model and tasks_list in src/todo_app/features/update_task.py
+- [X] T016 [US2] Implement logic to find existing task by ID in tasks_list
+- [X] T017 [US2] Implement logic to update the found task with new values from input task
+- [X] T018 [US2] Return True when task is successfully updated, False if task not found
+- [X] T019 [US2] Add proper type hints for all parameters and return values per FR-006
+- [X] T020 [US2] Verify function meets FR-003 requirements for updating Task in Task list
 
 ---
 
@@ -93,14 +93,14 @@ User can select a task and delete it, removing it from the task list permanently
 
 ### Tasks
 
-- [ ] T021 [US3] Create empty delete_task.py file in src/todo_app/features/ if not already present
-- [ ] T022 [US3] Implement delete_task function signature: def delete_task(task_id: str) -> bool in src/todo_app/features/delete_task.py
-- [ ] T023 [US3] Add import for Task model and tasks_list in src/todo_app/features/delete_task.py
-- [ ] T024 [US3] Implement logic to find task by ID in tasks_list
-- [ ] T025 [US3] Implement logic to remove the found task from tasks_list
-- [ ] T026 [US3] Return True when task is successfully deleted, False if task not found
-- [ ] T027 [US3] Add proper type hints for all parameters and return values per FR-006
-- [ ] T028 [US3] Verify function meets FR-002 requirements for removing Task from Task list
+- [X] T021 [US3] Create empty delete_task.py file in src/todo_app/features/ if not already present
+- [X] T022 [US3] Implement delete_task function signature: def delete_task(task_id: str) -> bool in src/todo_app/features/delete_task.py
+- [X] T023 [US3] Add import for Task model and tasks_list in src/todo_app/features/delete_task.py
+- [X] T024 [US3] Implement logic to find task by ID in tasks_list
+- [X] T025 [US3] Implement logic to remove the found task from tasks_list
+- [X] T026 [US3] Return True when task is successfully deleted, False if task not found
+- [X] T027 [US3] Add proper type hints for all parameters and return values per FR-006
+- [X] T028 [US3] Verify function meets FR-002 requirements for removing Task from Task list
 
 ---
 
@@ -114,14 +114,14 @@ User can mark a task as complete and see its status updated in the task list.
 
 ### Tasks
 
-- [ ] T029 [US4] Create empty mark_task_as_complete.py file in src/todo_app/features/ if not already present
-- [ ] T030 [US4] Implement mark_task_as_complete function signature: def mark_task_as_complete(task_id: str) -> bool in src/todo_app/features/mark_task_as_complete.py
-- [ ] T031 [US4] Add import for Task model and tasks_list in src/todo_app/features/mark_task_as_complete.py
-- [ ] T032 [US4] Implement logic to find task by ID in tasks_list
-- [ ] T033 [US4] Implement logic to set is_complete field to True for found task
-- [ ] T034 [US4] Return True when task status is successfully updated, False if task not found
-- [ ] T035 [US4] Add proper type hints for all parameters and return values per FR-006
-- [ ] T036 [US4] Verify function meets FR-004 requirements for marking Task as complete
+- [X] T029 [US4] Create empty mark_task_as_complete.py file in src/todo_app/features/ if not already present
+- [X] T030 [US4] Implement mark_task_as_complete function signature: def mark_task_as_complete(task_id: str) -> bool in src/todo_app/features/mark_task_as_complete.py
+- [X] T031 [US4] Add import for Task model and tasks_list in src/todo_app/features/mark_task_as_complete.py
+- [X] T032 [US4] Implement logic to find task by ID in tasks_list
+- [X] T033 [US4] Implement logic to set is_complete field to True for found task
+- [X] T034 [US4] Return True when task status is successfully updated, False if task not found
+- [X] T035 [US4] Add proper type hints for all parameters and return values per FR-006
+- [X] T036 [US4] Verify function meets FR-004 requirements for marking Task as complete
 
 ---
 
@@ -132,9 +132,9 @@ Complete implementation by ensuring all functions meet quality standards and req
 
 ### Tasks
 
-- [ ] T037 Verify all feature functions are in separate files per FR-005
-- [ ] T038 Confirm all functions use Task class from data models per FR-007
-- [ ] T039 Verify all functions use existing tasks_list per FR-008 (not creating new list)
-- [ ] T040 Ensure all code follows PEP 8 style guidelines
-- [ ] T041 Add docstrings to all functions explaining their purpose and usage
-- [ ] T042 Run basic validation to ensure all functions work together without errors
+- [X] T037 Verify all feature functions are in separate files per FR-005
+- [X] T038 Confirm all functions use Task class from data models per FR-007
+- [X] T039 Verify all functions use existing tasks_list per FR-008 (not creating new list)
+- [X] T040 Ensure all code follows PEP 8 style guidelines
+- [X] T041 Add docstrings to all functions explaining their purpose and usage
+- [X] T042 Run basic validation to ensure all functions work together without errors
